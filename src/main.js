@@ -1,3 +1,11 @@
+var ShowButtonView = Backbone.View.extend({
+  render: function() {
+    $(this.el).html('<button>I do nothing!</button>');
+  }
+});
 
-// Remove this line when you start working
-alert('Hello World!');
+var buttonView = new ShowButtonView({
+  el: $('.my-button')
+});
+
+buttonView.render();
